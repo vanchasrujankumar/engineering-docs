@@ -5,7 +5,8 @@
   "scripts": {
     "test": "npm run test:wiki && npm run test:docs",
     "test:wiki": "node infra/wiki/tests/wiki-validate.mjs",
-    "test:docs": "node infra/wiki/tests/docs-validate.mjs"
+    "test:docs": "node infra/wiki/tests/docs-validate.mjs",
+    "test:pages": "node infra/wiki/tests/pages-validate.mjs"
   },
   "keywords": [],
   "author": "",

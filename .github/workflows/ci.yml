@@ -41,6 +41,9 @@ jobs:
       - name: Validate docs structure
         run: npm run test:docs
 
+      - name: Validate live GitHub Pages
+        run: npm run test:pages
+
   e2e:
     runs-on: ubuntu-latest
     steps:

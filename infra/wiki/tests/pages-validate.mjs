@@ -38,14 +38,11 @@ const run = async () => {
   const projTitle = await page.locator('.markdown-body h1').textContent()
   assert(projTitle.includes('Project'), `Projects page renders (got: ${projTitle})`)
 
-  // 5. Sub-page: n8n
-  const link = page.locator('.markdown-body a:has-text("n8n")').first()
-  if (await link.count() > 0) {
-    await link.click()
-    await page.waitForSelector('.markdown-body h1', { timeout: 10000 })
-    const n8nTitle = await page.locator('.markdown-body h1').textContent()
-    assert(n8nTitle.includes('n8n'), `n8n project page renders (got: ${n8nTitle})`)
-  }
+  // 5. Sub-page: n8n (direct navigation via sidebar)
+  await page.goto(PAGES_URL + '/07-projects/n8n-docker-prod-stack', { waitUntil: 'networkidle', timeout: 20000 })
+  await page.waitForSelector('.markdown-body h1', { timeout: 10000 })
+  const n8nTitle = await page.locator('.markdown-body h1').textContent()
+  assert(n8nTitle.includes('n8n'), `n8n project page renders (got: ${n8nTitle})`)
 
   // 6. Screenshot
   await page.goto(PAGES_URL, { waitUntil: 'networkidle' })
