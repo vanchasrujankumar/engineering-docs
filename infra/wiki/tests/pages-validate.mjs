@@ -23,7 +23,7 @@ const run = async () => {
 
   // 2. Sidebar nav renders
   const navLinks = await page.locator('.sidebar a').count()
-  assert(navLinks >= 8, `Nav links present (count: ${navLinks})`)
+  assert(navLinks >= 20, `Nav links present (count: ${navLinks})`)
 
   // 3. Sub-page: Getting Started
   await page.click('.sidebar a:has-text("Getting Started")')
