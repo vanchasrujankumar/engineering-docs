@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Engineering Docs</title>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (function(){var t=localStorage.getItem('theme');if(!t)t=window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()
+  </script>
   <style>
     :root {
       --bg: #ffffff;
@@ -23,11 +26,11 @@
       --toc-width: 220px;
     }
     [data-theme="dark"] {
-      --bg: #0a0a0a;
-      --bg-sidebar: #0d0d0d;
-      --bg-code: #141414;
-      --bg-hover: #181818;
-      --border: #222222;
+      --bg: #000000;
+      --bg-sidebar: #000000;
+      --bg-code: #0f0f0f;
+      --bg-hover: #121212;
+      --border: #1e1e1e;
       --text: #f0f0f0;
       --text-secondary: #888888;
       --text-muted: #555555;
@@ -49,11 +52,17 @@
       width: var(--sidebar-width); min-width: var(--sidebar-width);
       background: var(--bg-sidebar); border-right: 1px solid var(--border);
       padding: 24px 0; overflow-y: auto; height: 100vh; position: sticky; top: 0;
+      box-shadow: inset -1px 0 0 var(--accent-glow);
     }
     .sidebar-logo {
       padding: 0 20px 20px; font-size: 18px; font-weight: 700;
       border-bottom: 1px solid var(--border); margin-bottom: 12px;
       display: flex; align-items: center; gap: 10px; color: var(--accent);
+      position: relative;
+    }
+    .sidebar-logo::before {
+      content: ''; position: absolute; top: -24px; left: 0; right: 0;
+      height: 3px; background: var(--accent);
     }
     .sidebar-logo svg { width: 24px; height: 24px; stroke: var(--accent); }
     .sidebar-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
@@ -80,8 +89,8 @@
     .toc a:hover { color: var(--accent); text-decoration: none; border-left-color: var(--accent); }
     .toc a.h2 { padding-left: 12px; }
     .toc a.h3 { padding-left: 24px; font-size: 12px; }
-    .markdown-body h1 { font-size: 2em; font-weight: 700; margin-bottom: 8px; letter-spacing: -.02em; }
-    .markdown-body h2 { font-size: 1.5em; font-weight: 600; margin-top: 32px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .markdown-body h1 { font-size: 2em; font-weight: 700; margin-bottom: 8px; letter-spacing: -.02em; color: var(--accent); }
+    .markdown-body h2 { font-size: 1.5em; font-weight: 600; margin-top: 32px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
     .markdown-body h3 { font-size: 1.2em; font-weight: 600; margin-top: 24px; margin-bottom: 8px; }
     .markdown-body h4 { font-weight: 600; margin-top: 16px; }
     .markdown-body p, .markdown-body li { margin-bottom: 8px; color: var(--text); }
@@ -181,7 +190,11 @@
         return `<a class="h${m[1]}" href="#${m[2]}">${m[3]}</a>`
       }).filter(Boolean).join('')
     }
-    function getTheme() { return localStorage.getItem('theme') || 'light' }
+    function getTheme() {
+      const stored = localStorage.getItem('theme')
+      if (stored) return stored
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    }
     function setTheme(t) {
       document.documentElement.setAttribute('data-theme', t)
       localStorage.setItem('theme', t)
