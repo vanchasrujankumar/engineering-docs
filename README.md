@@ -4,8 +4,8 @@ Centralized documentation hub for engineering, product, and operations teams.
 
 ## Quick Links
 
+- **GitHub Pages**: https://vanchasrujankumar.github.io/engineering-docs
 - **Wiki.js Site**: https://wiki.yourcompany.com (self-hosted)
-- **GitBook Site**: https://vanchasrujankumar.gitbook.io/engineering-docs
 - **GitHub Repo**: https://github.com/vanchasrujankumar/engineering-docs
 - **Contributing Guide**: CONTRIBUTING.md
 - **Infrastructure**: [infra/wiki/](infra/wiki/README.md) — Docker Compose + backup scripts
