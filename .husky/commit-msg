@@ -1,0 +1,8 @@
+#!/bin/sh
+# Validate conventional commit format
+commit_regex="^(feat|fix|docs|style|refactor|perf|test|chore|ci|build)(\(.+\))?: .{1,72}"
+if ! grep -qE "$commit_regex" "$1"; then
+  echo "  ✗ Invalid commit message format."
+  echo "  Use: type(scope): message (e.g. fix(auth): resolve login timeout)"
+  exit 1
+fi

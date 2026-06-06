@@ -6,12 +6,19 @@
     "test": "npm run test:wiki && npm run test:docs",
     "test:wiki": "node infra/wiki/tests/wiki-validate.mjs",
     "test:docs": "node infra/wiki/tests/docs-validate.mjs",
-    "test:pages": "node infra/wiki/tests/pages-validate.mjs"
+    "test:pages": "node infra/wiki/tests/pages-validate.mjs",
+    "prepare": "husky",
+    "lint:fix": "npx --cache /tmp/npm-cache markdownlint-cli2 --fix '**/*.md' '#node_modules' '#.git'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "husky": "^9.1.7",
     "playwright": "^1.60.0"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.22.1",
+    "prettier": "^3.8.3"
   }
 }

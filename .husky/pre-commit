@@ -1,0 +1,11 @@
+#!/bin/sh
+STAGED=$(git diff --cached --name-only --diff-filter=ACM | grep '\.md$' || true)
+[ -z "$STAGED" ] && exit 0
+
+echo "→ Fixing staged markdown files..."
+
+echo "$STAGED" | tr '\n' '\0' | xargs -0 npx prettier --write --log-level=warn
+echo "$STAGED" | tr '\n' '\0' | xargs -0 npx markdownlint-cli2 --fix 2>/dev/null || true
+echo "$STAGED" | tr '\n' '\0' | xargs -0 git add
+
+echo "✓ Auto-fixed markdown"
