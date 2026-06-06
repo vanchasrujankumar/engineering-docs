@@ -6,7 +6,7 @@ authors: [author-name]
 status: draft | review | published
 ---
 
-# Document Title
+## Document Title
 
 ## Overview
 

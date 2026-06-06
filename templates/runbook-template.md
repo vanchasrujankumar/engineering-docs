@@ -4,7 +4,7 @@ description: Step-by-step response guide
 tags: [runbook, incident, ops]
 ---
 
-# Runbook: {Scenario}
+## Runbook: {Scenario}
 
 ## Severity
 
@@ -24,7 +24,7 @@ tags: [runbook, incident, ops]
 
 <!-- Commands and expected output -->
 
-```
+```bash
 command
 ```
 

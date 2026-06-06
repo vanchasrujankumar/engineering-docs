@@ -7,7 +7,7 @@ Wiki.js syncs bidirectionally with your GitHub repo:
 
 ## Step 1: Create a GitHub Personal Access Token
 
-1. Go to https://github.com/settings/tokens
+1. Go to <https://github.com/settings/tokens>
 2. Click **Generate new token (classic)**
 3. Scopes: `repo` (full control) or `public_repo` (if repo is public)
 4. Copy the token
@@ -29,8 +29,8 @@ Wiki.js syncs bidirectionally with your GitHub repo:
 | **Local Path**         | `/wiki/data/repo`                                           |
 | **Sync Direction**     | Bidirectional                                               |
 
-4. Click **Save & Run Now**
-5. Check the **Activity Log** tab for sync status
+1. Click **Save & Run Now**
+2. Check the **Activity Log** tab for sync status
 
 ## Step 3: Set Up Automatic Sync
 
@@ -41,7 +41,7 @@ In Wiki.js under **Cron Jobs**, create:
 
 ## File Mapping
 
-```
+```text
 engineering-docs/           ← GitHub repo
 ├── 01-getting-started/     ← Wiki.js pages
 ├── 02-guides/

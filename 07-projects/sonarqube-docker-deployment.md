@@ -3,7 +3,7 @@
 Production-grade SonarQube Community Build deployment for continuous code
 quality inspection.
 
-**Repo**: https://github.com/vanchasrujankumar/sonarqube-docker-deployment
+**Repo**: <https://github.com/vanchasrujankumar/sonarqube-docker-deployment>
 
 ## Purpose
 
@@ -21,7 +21,7 @@ projects. Scans for bugs, vulnerabilities, code smells, and technical debt.
 
 ## Environments
 
-```
+```text
 dev:  docker compose -f docker-compose.dev.yml up -d
 prod: docker compose -f docker-compose.prod.yml up -d
 ```

@@ -2,7 +2,7 @@
 
 Self-hosted production-grade n8n workflow automation platform.
 
-**Repo**: https://github.com/vanchasrujankumar/n8n-docker-prod-stack
+**Repo**: <https://github.com/vanchasrujankumar/n8n-docker-prod-stack>
 
 ## Purpose
 
@@ -22,7 +22,7 @@ Suitable for team-wide workflow automation.
 
 ## Architecture
 
-```
+```text
 Internet → Traefik (SSL) → n8n → PostgreSQL
                          → Prometheus → Grafana
 ```

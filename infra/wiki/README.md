@@ -29,7 +29,7 @@ docker compose -f docker-compose.yml -f nginx/docker-compose.nginx.yml up -d
 
 ## Architecture
 
-```
+```text
 infra/wiki/
 ├── docker-compose.yml          # Wiki.js + PostgreSQL
 ├── docker-compose.nginx.yml    # NGINX + Certbot (optional, for HTTPS)

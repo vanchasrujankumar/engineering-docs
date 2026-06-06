@@ -6,7 +6,7 @@ deciders: [list-of-decision-makers]
 date: YYYY-MM-DD
 ---
 
-# ADR-{NNN}: Decision Title
+## ADR-{NNN}: Decision Title
 
 ## Context
 

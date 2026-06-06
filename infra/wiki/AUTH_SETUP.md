@@ -8,7 +8,7 @@ then add corporate authentication when the team grows.
 Deployed as-is, Wiki.js creates the admin account from `WIKI_ADMIN_EMAIL` on
 first run. Self-registration is disabled.
 
-```
+```text
 Administration → Authentication → Local → Self-Registration: OFF
 ```
 
@@ -20,7 +20,7 @@ When ready to add team members, pick one auth provider:
 
 ### Option A: Microsoft AD / Azure AD (OIDC)
 
-```
+```text
 Administration → Authentication → OIDC → Add Provider
 
 Provider Name: AD / Microsoft Entra
@@ -36,7 +36,7 @@ Register an app in Azure AD → grant `User.Read` → paste Client ID/Secret abo
 
 ### Option B: LDAP (on-prem AD, OpenLDAP)
 
-```
+```text
 Administration → Authentication → LDAP → Add Server
 
 Server URL:   ldap://your-domain-controller:389
@@ -64,7 +64,7 @@ After enabling SSO, assign roles:
 
 To scope access per folder:
 
-```
+```text
 Administration → Namespaces → [namespace] → Security
 → Add Role Binding (Group / User → Role)
 ```

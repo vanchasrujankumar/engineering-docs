@@ -2,7 +2,7 @@
 
 Automated bootstrapping of a macOS development machine from scratch.
 
-**Repo**: https://github.com/vanchasrujankumar/macos-dev-setup
+**Repo**: <https://github.com/vanchasrujankumar/macos-dev-setup>
 
 ## Purpose
 

@@ -6,7 +6,7 @@ deciders: [engineering-team]
 date: 2026-06-06
 ---
 
-# ADR-001: Documentation Platform Selection
+## ADR-001: Documentation Platform Selection
 
 ## Context
 

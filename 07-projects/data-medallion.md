@@ -3,7 +3,7 @@
 Production-grade real-time ELT pipeline implementing the medallion architecture
 (Bronze → Silver → Gold).
 
-**Repo**: https://github.com/vanchasrujankumar/data-medallion
+**Repo**: <https://github.com/vanchasrujankumar/data-medallion>
 
 ## Purpose
 
@@ -26,7 +26,7 @@ Docker Compose.
 
 ## Architecture
 
-```
+```text
 Source → Redpanda → Bronze (raw) → dbt → Silver (cleaned) → dbt → Gold (aggregated) → FastAPI
 ```
 

@@ -3,7 +3,7 @@
 GitHub Copilot instructions and development guardrails enforced across all
 projects.
 
-**Repo**: https://github.com/vanchasrujankumar/copilot-repo
+**Repo**: <https://github.com/vanchasrujankumar/copilot-repo>
 
 ## Purpose
 
