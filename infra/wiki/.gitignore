@@ -1,0 +1,11 @@
+# Runtime data
+config/
+data/
+backups/
+
+# Environment
+.env
+
+# SSL artifacts (renewed by certbot)
+nginx/ssl/
+nginx/html/

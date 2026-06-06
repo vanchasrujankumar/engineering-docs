@@ -4,9 +4,11 @@ Centralized documentation hub for engineering, product, and operations teams.
 
 ## Quick Links
 
+- **Wiki.js Site**: https://wiki.yourcompany.com (self-hosted)
 - **GitBook Site**: https://vanchasrujankumar.gitbook.io/engineering-docs
 - **GitHub Repo**: https://github.com/vanchasrujankumar/engineering-docs
 - **Contributing Guide**: CONTRIBUTING.md
+- **Infrastructure**: [infra/wiki/](infra/wiki/README.md) — Docker Compose + backup scripts
 
 ## Structure
 
@@ -18,11 +20,12 @@ Centralized documentation hub for engineering, product, and operations teams.
 05-standards/         Coding standards, security policies
 06-operations/        Monitoring, incident response
 templates/            Reusable document templates
+infra/                Deployment infrastructure (Wiki.js, scripts)
 ```
 
 ## For Contributors
 
-- **Non-technical**: Open GitBook (link above) → click Edit → save → done
+- **Non-technical**: Open Wiki.js (link above) → edit in visual editor → save → synced to GitHub
 - **Technical**: Fork, branch, edit Markdown, open PR
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guide.

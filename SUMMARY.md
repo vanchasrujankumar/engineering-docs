@@ -28,3 +28,7 @@
 * [Overview](06-operations/README.md)
 * [Monitoring](06-operations/monitoring.md)
 * [Incident Response](06-operations/incident-response.md)
+
+## Infrastructure
+* [Wiki.js Self-Hosted](infra/wiki/README.md)
+* [GitHub Sync Guide](infra/wiki/GITHUB_SYNC.md)
