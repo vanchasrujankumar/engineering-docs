@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/vanchasrujankumar/engineering-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/vanchasrujankumar/engineering-docs/actions/workflows/ci.yml)
 [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://github.com/vanchasrujankumar/engineering-docs/issues?q=label%3Adependencies)
-[![Pages](https://img.shields.io/github/deployments/vanchasrujankumar/engineering-docs/github-pages?label=pages&logo=github)](https://vanchasrujankumar.github.io/engineering-docs)
+[![Pages](https://img.shields.io/website?label=pages&url=https%3A%2F%2Fvanchasrujankumar.github.io%2Fengineering-docs)](https://vanchasrujankumar.github.io/engineering-docs)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 Centralized documentation hub for engineering, product, and operations teams.
