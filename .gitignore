@@ -20,6 +20,12 @@ out/
 _book/
 site/
 
+# npm cache artifacts
+_cacache/
+_npx/
+_logs/
+_update-notifier-last-checked
+
 # Environment
 .env
 .env.local
