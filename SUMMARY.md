@@ -33,3 +33,11 @@
 * [Wiki.js Self-Hosted](infra/wiki/README.md)
 * [GitHub Sync Guide](infra/wiki/GITHUB_SYNC.md)
 * [Auth & Access Control](infra/wiki/AUTH_SETUP.md)
+
+## Projects
+* [Overview](07-projects/README.md)
+* [macOS Dev Setup](07-projects/macos-dev-setup.md)
+* [Data Medallion](07-projects/data-medallion.md)
+* [Copilot Repo](07-projects/copilot-repo.md)
+* [n8n Production Stack](07-projects/n8n-docker-prod-stack.md)
+* [SonarQube Deployment](07-projects/sonarqube-docker-deployment.md)
