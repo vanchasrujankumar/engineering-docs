@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD013 -->
+
 # Project Repositories
 
 Quick-reference overview of all active project repositories, their purpose, tech
