@@ -32,3 +32,4 @@
 ## Infrastructure
 * [Wiki.js Self-Hosted](infra/wiki/README.md)
 * [GitHub Sync Guide](infra/wiki/GITHUB_SYNC.md)
+* [Auth & Access Control](infra/wiki/AUTH_SETUP.md)
