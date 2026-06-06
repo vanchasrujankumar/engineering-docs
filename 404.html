@@ -8,29 +8,33 @@
   <style>
     :root {
       --bg: #ffffff;
-      --bg-sidebar: #f6f8fa;
-      --bg-code: #f3f4f6;
-      --bg-hover: #e8eaed;
-      --border: #d0d7de;
-      --text: #1f2328;
-      --text-secondary: #656d76;
-      --text-muted: #8b949e;
-      --accent: #0969da;
-      --accent-hover: #0550ae;
+      --bg-sidebar: #fafafa;
+      --bg-code: #f5f5f5;
+      --bg-hover: #f0f0f0;
+      --border: #e0e0e0;
+      --text: #1a1a1a;
+      --text-secondary: #666666;
+      --text-muted: #999999;
+      --accent: #e65c00;
+      --accent-hover: #cc5200;
+      --accent-subtle: #fff3e6;
+      --accent-glow: rgba(230, 92, 0, 0.08);
       --sidebar-width: 280px;
       --toc-width: 220px;
     }
     [data-theme="dark"] {
-      --bg: #0d1117;
-      --bg-sidebar: #161b22;
-      --bg-code: #1c2128;
-      --bg-hover: #21262d;
-      --border: #30363d;
-      --text: #e6edf3;
-      --text-secondary: #8b949e;
-      --text-muted: #484f58;
-      --accent: #58a6ff;
-      --accent-hover: #79c0ff;
+      --bg: #0a0a0a;
+      --bg-sidebar: #0d0d0d;
+      --bg-code: #141414;
+      --bg-hover: #181818;
+      --border: #222222;
+      --text: #f0f0f0;
+      --text-secondary: #888888;
+      --text-muted: #555555;
+      --accent: #ff6b00;
+      --accent-hover: #ff8c00;
+      --accent-subtle: #1a0d00;
+      --accent-glow: rgba(255, 107, 0, 0.1);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -49,9 +53,9 @@
     .sidebar-logo {
       padding: 0 20px 20px; font-size: 18px; font-weight: 700;
       border-bottom: 1px solid var(--border); margin-bottom: 12px;
-      display: flex; align-items: center; gap: 8px;
+      display: flex; align-items: center; gap: 10px; color: var(--accent);
     }
-    .sidebar-logo svg { width: 24px; height: 24px; }
+    .sidebar-logo svg { width: 24px; height: 24px; stroke: var(--accent); }
     .sidebar-section { padding: 8px 20px 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--text-muted); }
     .sidebar a {
       display: block; padding: 6px 20px; font-size: 14px; color: var(--text-secondary);
