@@ -9,3 +9,6 @@ backups/
 # SSL artifacts (renewed by certbot)
 nginx/ssl/
 nginx/html/
+
+# Test screenshots
+tests/*.png

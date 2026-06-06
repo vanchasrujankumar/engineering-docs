@@ -1,0 +1,16 @@
+{
+  "name": "engineering-docs",
+  "version": "1.0.0",
+  "description": "Centralized documentation hub for engineering, product, and operations teams.",
+  "scripts": {
+    "test": "npm run test:wiki && npm run test:docs",
+    "test:wiki": "node infra/wiki/tests/wiki-validate.mjs",
+    "test:docs": "node infra/wiki/tests/docs-validate.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}
