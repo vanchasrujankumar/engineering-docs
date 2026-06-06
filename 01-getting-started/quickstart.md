@@ -8,6 +8,7 @@
 ## 5-Minute Setup
 
 1. **Clone the repo**
+
    ```bash
    git clone https://github.com/vanchasrujankumar/engineering-docs.git
    cd engineering-docs

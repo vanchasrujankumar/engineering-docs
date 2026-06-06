@@ -64,5 +64,5 @@ infra/wiki/
 
 ## Sync with GitHub
 
-Wiki.js syncs content bidirectionally with the GitHub repo.
-See [GITHUB_SYNC.md](GITHUB_SYNC.md) for setup.
+Wiki.js syncs content bidirectionally with the GitHub repo. See
+[GITHUB_SYNC.md](GITHUB_SYNC.md) for setup.

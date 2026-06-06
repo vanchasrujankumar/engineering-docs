@@ -6,8 +6,8 @@ Automated bootstrapping of a macOS development machine from scratch.
 
 ## Purpose
 
-One-command setup to provision a new macOS machine with all
-developer tools, languages, and configurations. No manual steps.
+One-command setup to provision a new macOS machine with all developer tools,
+languages, and configurations. No manual steps.
 
 ## Stack
 

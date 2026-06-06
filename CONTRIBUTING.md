@@ -26,11 +26,11 @@ That's it. No terminal, no Markdown knowledge required.
 
 ### Branch Naming
 
-| Branch pattern | Purpose |
-|---------------|---------|
-| `docs/describe-change` | New docs or major updates |
-| `fix/describe-fix` | Typo, broken link, formatting |
-| `adr/topic` | Architecture Decision Record |
+| Branch pattern         | Purpose                       |
+| ---------------------- | ----------------------------- |
+| `docs/describe-change` | New docs or major updates     |
+| `fix/describe-fix`     | Typo, broken link, formatting |
+| `adr/topic`            | Architecture Decision Record  |
 
 ### PR Guidelines
 
@@ -49,12 +49,13 @@ That's it. No terminal, no Markdown knowledge required.
 
 ```markdown
 # Heading 1 (page title)
+
 ## Heading 2 (section)
+
 ### Heading 3 (subsection)
 
-**Bold text** for emphasis
-`code` for commands or file names
-[link text](url) for hyperlinks
+**Bold text** for emphasis `code` for commands or file names [link text](url)
+for hyperlinks
 ```
 
 ## Need Help?

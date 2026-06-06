@@ -24,4 +24,5 @@ git push origin main
 
 ## Emergency Deploy
 
-For hotfixes, create a branch from the last known good tag, cherry-pick fixes, and open a PR targeting `main` directly.
+For hotfixes, create a branch from the last known good tag, cherry-pick fixes,
+and open a PR targeting `main` directly.

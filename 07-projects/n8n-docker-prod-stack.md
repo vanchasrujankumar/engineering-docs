@@ -6,19 +6,19 @@ Self-hosted production-grade n8n workflow automation platform.
 
 ## Purpose
 
-Deploy and operate n8n at scale with monitoring, SSL, backups,
-and CI/CD. Suitable for team-wide workflow automation.
+Deploy and operate n8n at scale with monitoring, SSL, backups, and CI/CD.
+Suitable for team-wide workflow automation.
 
 ## Stack
 
-| Component | Role |
-|-----------|------|
-| **n8n** | Workflow automation engine |
-| **PostgreSQL 16** | Database backend |
-| **Traefik v3.1** | Reverse proxy + Let's Encrypt auto-SSL |
-| **Prometheus + Grafana** | Monitoring & dashboards |
-| **MinIO** | S3-compatible file storage |
-| **SMTP** | Email integration |
+| Component                | Role                                   |
+| ------------------------ | -------------------------------------- |
+| **n8n**                  | Workflow automation engine             |
+| **PostgreSQL 16**        | Database backend                       |
+| **Traefik v3.1**         | Reverse proxy + Let's Encrypt auto-SSL |
+| **Prometheus + Grafana** | Monitoring & dashboards                |
+| **MinIO**                | S3-compatible file storage             |
+| **SMTP**                 | Email integration                      |
 
 ## Architecture
 

@@ -21,4 +21,5 @@
 ## Incident Response
 
 - Report security incidents immediately to #security Slack channel
-- Follow the Incident Response runbook in [Operations](../06-operations/incident-response.md)
+- Follow the Incident Response runbook in
+  [Operations](../06-operations/incident-response.md)

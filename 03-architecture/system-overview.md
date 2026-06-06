@@ -24,7 +24,7 @@ Description, responsibilities, dependencies.
 
 ## Deployment View
 
-| Component | Infrastructure | Region |
-|-----------|---------------|--------|
-| A | Kubernetes | us-east-1 |
-| B | Lambda | us-east-1 |
+| Component | Infrastructure | Region    |
+| --------- | -------------- | --------- |
+| A         | Kubernetes     | us-east-1 |
+| B         | Lambda         | us-east-1 |

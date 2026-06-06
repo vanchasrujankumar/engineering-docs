@@ -1,24 +1,23 @@
 # SonarQube Docker Deployment
 
-Production-grade SonarQube Community Build deployment for
-continuous code quality inspection.
+Production-grade SonarQube Community Build deployment for continuous code
+quality inspection.
 
 **Repo**: https://github.com/vanchasrujankumar/sonarqube-docker-deployment
 
 ## Purpose
 
-Self-hosted SonarQube instance to enforce code quality gates
-across all projects. Scans for bugs, vulnerabilities, code
-smells, and technical debt.
+Self-hosted SonarQube instance to enforce code quality gates across all
+projects. Scans for bugs, vulnerabilities, code smells, and technical debt.
 
 ## Stack
 
-| Component | Role |
-|-----------|------|
-| **SonarQube Community Build v26.5.0** | Code quality platform |
-| **PostgreSQL 17 Alpine** | Database backend |
-| **NGINX** | Reverse proxy with SSL |
-| **Docker Compose** | Multi-environment orchestration |
+| Component                             | Role                            |
+| ------------------------------------- | ------------------------------- |
+| **SonarQube Community Build v26.5.0** | Code quality platform           |
+| **PostgreSQL 17 Alpine**              | Database backend                |
+| **NGINX**                             | Reverse proxy with SSL          |
+| **Docker Compose**                    | Multi-environment orchestration |
 
 ## Environments
 

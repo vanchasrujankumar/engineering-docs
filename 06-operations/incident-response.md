@@ -2,12 +2,12 @@
 
 ## Severity Levels
 
-| Level | Definition | Response Time |
-|-------|-----------|---------------|
-| P0 | Complete outage, data loss | 15 min |
-| P1 | Major feature degraded | 30 min |
-| P2 | Partial degradation | 2 hours |
-| P3 | Minor issue, cosmetic | Next business day |
+| Level | Definition                 | Response Time     |
+| ----- | -------------------------- | ----------------- |
+| P0    | Complete outage, data loss | 15 min            |
+| P1    | Major feature degraded     | 30 min            |
+| P2    | Partial degradation        | 2 hours           |
+| P3    | Minor issue, cosmetic      | Next business day |
 
 ## Lifecycle
 
@@ -26,4 +26,5 @@
 
 ## Post-Mortem Template
 
-See [templates/runbook-template.md](../templates/runbook-template.md) for the standard format.
+See [templates/runbook-template.md](../templates/runbook-template.md) for the
+standard format.

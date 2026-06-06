@@ -33,6 +33,6 @@ date: YYYY-MM-DD
 ## Alternatives Considered
 
 | Alternative | Pros | Cons |
-|-------------|------|------|
-| Option A | ... | ... |
-| Option B | ... | ... |
+| ----------- | ---- | ---- |
+| Option A    | ...  | ...  |
+| Option B    | ...  | ...  |

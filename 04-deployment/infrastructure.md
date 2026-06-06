@@ -2,11 +2,11 @@
 
 ## Environments
 
-| Environment | URL | Region | CI/CD |
-|-------------|-----|--------|-------|
-| Development | dev.example.com | us-east-1 | Auto on PR |
-| Staging | staging.example.com | us-east-1 | Auto on merge to main |
-| Production | example.com | us-east-1, eu-west-1 | Manual approval |
+| Environment | URL                 | Region               | CI/CD                 |
+| ----------- | ------------------- | -------------------- | --------------------- |
+| Development | dev.example.com     | us-east-1            | Auto on PR            |
+| Staging     | staging.example.com | us-east-1            | Auto on merge to main |
+| Production  | example.com         | us-east-1, eu-west-1 | Manual approval       |
 
 ## Services
 

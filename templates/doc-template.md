@@ -31,6 +31,6 @@ status: draft | review | published
 
 ## Changelog
 
-| Date | Author | Change |
-|------|--------|--------|
-| YYYY-MM-DD | @user | Initial draft |
+| Date       | Author | Change        |
+| ---------- | ------ | ------------- |
+| YYYY-MM-DD | @user  | Initial draft |

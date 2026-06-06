@@ -1,12 +1,12 @@
 # Authentication & Access Control
 
-Wiki.js supports multiple auth strategies. Start with local-only (just
-you), then add corporate authentication when the team grows.
+Wiki.js supports multiple auth strategies. Start with local-only (just you),
+then add corporate authentication when the team grows.
 
 ## Phase 1: Local Auth (Now — Single Admin)
 
-Deployed as-is, Wiki.js creates the admin account from
-`WIKI_ADMIN_EMAIL` on first run. Self-registration is disabled.
+Deployed as-is, Wiki.js creates the admin account from `WIKI_ADMIN_EMAIL` on
+first run. Self-registration is disabled.
 
 ```
 Administration → Authentication → Local → Self-Registration: OFF
@@ -32,8 +32,7 @@ Email:          email
 Display Name:   name
 ```
 
-Register an app in Azure AD → grant `User.Read` → paste Client
-ID/Secret above.
+Register an app in Azure AD → grant `User.Read` → paste Client ID/Secret above.
 
 ### Option B: LDAP (on-prem AD, OpenLDAP)
 
@@ -49,19 +48,19 @@ Search Filter:     (&(objectClass=user)(sAMAccountName={{username}}))
 
 ### Option C: Google Workspace, Okta, GitHub, SAML
 
-Wiki.js supports all of these natively — same pattern, just select
-the provider and paste credentials from your IdP.
+Wiki.js supports all of these natively — same pattern, just select the provider
+and paste credentials from your IdP.
 
 ## Role-Based Access (RBAC)
 
 After enabling SSO, assign roles:
 
-| Role | Permissions | Use For |
-|------|-------------|---------|
-| Viewer | Read only | Product, stakeholders, read-only users |
-| Editor | Create & edit | Writers, engineers, contributors |
-| Manager | Manage permissions | Section owners, leads |
-| Admin | Full access | You (system owner) |
+| Role    | Permissions        | Use For                                |
+| ------- | ------------------ | -------------------------------------- |
+| Viewer  | Read only          | Product, stakeholders, read-only users |
+| Editor  | Create & edit      | Writers, engineers, contributors       |
+| Manager | Manage permissions | Section owners, leads                  |
+| Admin   | Full access        | You (system owner)                     |
 
 To scope access per folder:
 
@@ -80,9 +79,8 @@ Administration → Namespaces → [namespace] → Security
 6. Select the user/group → assign `Editor`
 7. Done — they log in with their corporate credentials
 
-> **Tip**: Use AD groups, not individual users, for role bindings.
-> Assign `Engineering-Contributors` group as Editor, not each person
-> one by one.
+> **Tip**: Use AD groups, not individual users, for role bindings. Assign
+> `Engineering-Contributors` group as Editor, not each person one by one.
 
 ## Related
 

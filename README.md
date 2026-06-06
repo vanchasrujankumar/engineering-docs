@@ -1,5 +1,10 @@
 # Engineering Docs
 
+[![CI](https://github.com/vanchasrujankumar/engineering-docs/actions/workflows/ci.yml/badge.svg)](https://github.com/vanchasrujankumar/engineering-docs/actions/workflows/ci.yml)
+[![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://github.com/vanchasrujankumar/engineering-docs/issues?q=label%3Adependencies)
+[![Pages](https://img.shields.io/github/deployments/vanchasrujankumar/engineering-docs/github-pages?label=pages&logo=github)](https://vanchasrujankumar.github.io/engineering-docs)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 Centralized documentation hub for engineering, product, and operations teams.
 
 ## Quick Links
@@ -8,7 +13,8 @@ Centralized documentation hub for engineering, product, and operations teams.
 - **Wiki.js Site**: https://wiki.yourcompany.com (self-hosted)
 - **GitHub Repo**: https://github.com/vanchasrujankumar/engineering-docs
 - **Contributing Guide**: CONTRIBUTING.md
-- **Infrastructure**: [infra/wiki/](infra/wiki/README.md) — Docker Compose + backup scripts
+- **Infrastructure**: [infra/wiki/](infra/wiki/README.md) — Docker Compose +
+  backup scripts
 
 ## Structure
 
@@ -25,7 +31,8 @@ infra/                Deployment infrastructure (Wiki.js, scripts)
 
 ## For Contributors
 
-- **Non-technical**: Open Wiki.js (link above) → edit in visual editor → save → synced to GitHub
+- **Non-technical**: Open Wiki.js (link above) → edit in visual editor → save →
+  synced to GitHub
 - **Technical**: Fork, branch, edit Markdown, open PR
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guide.
