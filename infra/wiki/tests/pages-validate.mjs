@@ -25,24 +25,24 @@ const run = async () => {
   const navLinks = await page.locator('.sidebar a').count()
   assert(navLinks >= 20, `Nav links present (count: ${navLinks})`)
 
-  // 3. Sub-page: Getting Started
-  await page.click('.sidebar a:has-text("Getting Started")')
+  // 3. Sub-page: Getting Started (Quick Start)
+  await page.click('.sidebar a:has-text("Quick Start")')
   await page.waitForSelector('.markdown-body h1', { timeout: 10000 })
   const gsTitle = await page.locator('.markdown-body h1').textContent()
-  assert(gsTitle.includes('Getting Started') || gsTitle.includes('Welcome'),
-    `Getting Started renders (got: ${gsTitle})`)
+  assert(gsTitle.includes('Quick Start') || gsTitle.includes('Setup'),
+    `Quick Start renders (got: ${gsTitle})`)
 
-  // 4. Sub-page: Projects
-  await page.click('.sidebar a:has-text("Projects")')
-  await page.waitForSelector('.markdown-body h1', { timeout: 10000 })
-  const projTitle = await page.locator('.markdown-body h1').textContent()
-  assert(projTitle.includes('Project'), `Projects page renders (got: ${projTitle})`)
-
-  // 5. Sub-page: n8n (direct navigation via sidebar)
-  await page.goto(PAGES_URL + '/07-projects/n8n-docker-prod-stack', { waitUntil: 'networkidle', timeout: 20000 })
+  // 4. Sub-page: n8n (via sidebar)
+  await page.click('.sidebar a:has-text("n8n Production Stack")')
   await page.waitForSelector('.markdown-body h1', { timeout: 10000 })
   const n8nTitle = await page.locator('.markdown-body h1').textContent()
-  assert(n8nTitle.includes('n8n'), `n8n project page renders (got: ${n8nTitle})`)
+  assert(n8nTitle.includes('n8n'), `n8n page renders (got: ${n8nTitle})`)
+
+  // 5. Dark mode toggle works
+  const toggleBtn = page.locator('#themeToggle')
+  await toggleBtn.click()
+  const theme = await page.evaluate(() => document.documentElement.getAttribute('data-theme'))
+  assert(theme === 'dark', `Dark mode toggles (got: ${theme})`)
 
   // 6. Screenshot
   await page.goto(PAGES_URL, { waitUntil: 'networkidle' })
