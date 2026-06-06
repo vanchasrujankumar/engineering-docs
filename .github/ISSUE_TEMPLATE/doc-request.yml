@@ -1,0 +1,20 @@
+name: Documentation Request
+description: Request new or updated documentation
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs documenting?
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Target audience
+      options:
+        - Engineering
+        - Product
+        - Operations
+        - All teams

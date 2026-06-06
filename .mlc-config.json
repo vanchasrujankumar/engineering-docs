@@ -1,0 +1,17 @@
+{
+  "replacementPatterns": [
+    {
+      "pattern": "^/",
+      "replacement": "https://github.com/vanchasrujankumar/engineering-docs/tree/main/"
+    }
+  ],
+  "httpHeaders": [
+    {
+      "urls": ["https://github.com/"],
+      "headers": { "Accept-Encoding": "gzip" }
+    }
+  ],
+  "ignorePatterns": [
+    { "pattern": "^http://localhost" }
+  ]
+}
