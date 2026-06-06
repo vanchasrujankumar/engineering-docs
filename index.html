@@ -53,8 +53,8 @@
   <script>
     const base = '/engineering-docs/'
     const path = location.pathname.replace(base, '').replace(/\?.*$/, '') || 'README.md'
-    const mdPath = path.endsWith('.md') ? path : path + '.md'
-    fetch(mdPath)
+    const mdPath = (path.endsWith('.md') ? path : path + '.md').replace(/^\.\//, '')
+    fetch(base + mdPath)
       .then(r => {
         if (!r.ok) throw new Error('Not found: ' + mdPath)
         return r.text()
